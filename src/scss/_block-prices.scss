@@ -1,0 +1,341 @@
+
+.block-prices{
+    flex-direction: column;
+
+    &__main{
+        padding:16px 0 0px 16px;
+        flex-direction: column;
+        
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            padding:24px 24px 0 24px;
+        }
+
+        @media (min-width: 1365.98px){
+            padding:24px 32px 0 32px;
+        }
+    }
+
+    &__txt{
+        margin-bottom: 16px;
+        line-height: 18px;
+        margin-right: 16px;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            width: 421px;
+        }
+
+        @media (min-width: 1365.98px){
+            width: 421px;
+        }
+    }
+
+
+    &__btn-commercial-proposal{
+        font-family: 'TT Lakes-Medium';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+        display: flex;
+        margin-bottom: 40px;
+        align-items: center;
+        padding-right: 24px;
+        
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-bottom: 47px; 
+        }
+
+        @media (min-width: 1365.98px){
+            margin-bottom: 50px;
+        }
+        &:hover{
+
+            .btn-txt-commercial-proposal{
+                border-bottom: 3px solid $color-btn-active-border;
+            }  
+             
+        }
+        &:active{
+            
+            .btn-txt-commercial-proposal{
+                border-bottom: 3px solid $color-btn-active-border;
+            }  
+        }
+        &:focus{
+           
+            .btn-txt-commercial-proposal{
+                border-bottom: 3px solid $color-btn-active-border;
+            }   
+        }
+    }
+
+    &__fade{
+        width:24px;
+        height: 200px;
+        top: 16px;
+        right:0; 
+    }
+}
+
+.btn-txt-commercial-proposal{
+    position: relative;
+    
+    &::after{
+        content: " ";
+        display:inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../img/more.svg')center center/cover no-repeat;
+        position: absolute;  
+    }
+  }
+
+
+  .block-prices-slider{
+
+    &__container{
+        position: relative; 
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+        padding-bottom: 44px;
+        
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            padding: 0;
+            min-width: 0;
+        }
+
+        @media (min-width: 1365.98px){
+            padding: 0;
+        }
+    }
+
+    &__wrapper{
+        width: 100%;
+        height: 100% ;
+        min-width: 0;
+        flex-wrap: nowrap;
+        
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            display: grid; 
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 324px;
+            grid-template-columns: auto;
+            gap: 0;
+            border-radius: 6px;
+            margin-bottom: 24px;
+        } 
+
+        @media (min-width: 1365.98px){
+            display: grid; 
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 324px;
+            grid-template-columns: auto;
+            gap: 0;
+            border-radius: 6px;
+            margin-bottom: 32px;
+            padding: 0;
+        }
+    }
+
+    &__slide{
+        display: flex;   
+        box-sizing: border-box;
+        width: 260px;
+        height: 100%;
+        align-items: center;
+        border-radius: 6px;
+        border: 1px solid #EAEAEA;
+        background: #FFF;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            width: 100%;
+            height: 65px;
+            border: none;
+            border-radius: 0; 
+        }
+
+        @media (min-width: 1365.98px){
+            width: 100%;
+            height: 65px;
+            border: none;
+            border-radius: 0;
+            margin-right: 0 !important;  
+        }
+    }
+  }
+
+  .price-cards-header{
+    display:none;
+
+    @media screen and (min-width:767.98px) and (max-width: 1366px){
+        display: grid;
+        grid-template-columns: 40% 20% 20% 20%;
+        padding: 0 16px;
+        align-items: center; 
+    }
+
+    @media (min-width: 1365.98px){
+        display: grid;
+        grid-template-columns: 40% 20% 20% 20%;
+        padding: 0 24px;
+        align-items: center;
+    }
+
+    .price-card__cell-wrapper{
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-bottom: 16px;
+        }
+        
+        @media (min-width: 1365.98px){
+            margin-bottom: 16px;  
+        }
+    }
+}
+
+.price-card{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+
+    @media screen and (min-width:767.98px) and (max-width: 1366px){
+        display: grid;
+        box-sizing: border-box;
+        width: 100%;
+        height: 65px;
+        align-items: center;
+        grid-template-columns: 40% 20% 20% 20%; 
+    }
+
+    @media (min-width: 1365.98px){
+        display: grid;
+        box-sizing: border-box;
+        width: 100%;
+        height: 65px;
+        padding-left: 24px;
+        padding-right: 24px;
+        align-items: center;
+        grid-template-columns: 40% 20% 20% 20%;
+    }
+
+
+    &::before{
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            z-index: 20;
+            transform: translateX(-50%);
+            width: 96%;
+            height: 1px;
+            flex-shrink: 0;
+            background: $color-block-card-border;  
+        } 
+
+        @media (min-width: 1365.98px){
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            z-index: 20;
+            transform: translateX(-50%);
+            width: 96%;
+            height: 1px;
+            flex-shrink: 0;
+            background: $color-block-card-border;
+        }
+    }
+    
+    &__title{
+        color: #7E7E82;
+        font-family: 'TT Lakes-Medium';
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 4px;
+        
+        &--s-l-visible--none{
+
+            @media screen and (min-width:767.98px) and (max-width: 1366px){
+                display: none; 
+            }
+            
+            @media (min-width: 1365.98px){
+                display: none;
+            }
+        }
+    }
+
+    &__cell-wrapper{
+        margin-bottom: 16px;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-bottom: 0;  
+        }
+
+        @media (min-width: 1365.98px){
+            margin-bottom: 0;
+        }
+
+
+
+        &:last-of-type{
+            margin-bottom: 0; 
+        }
+    }
+
+    &__btn{
+        display: inline-block;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        border-radius: 16px;
+        background: $color-bg-btn;
+        background-image: url('../img/goside.svg');
+        background-repeat: no-repeat;
+        background-position: top 50% right 8px;
+        
+        @media (min-width: 1365.98px){
+            right: 24px;
+        }
+
+        &:hover{
+            transform:scale(1.2);
+            opacity: 0.7;
+            box-shadow:0 0 5px 5px $color-btn-active-border;
+            transition: 0.1s;  
+        }
+        &:active{
+            transform:scale(1.2);
+            opacity: 0.7;
+            box-shadow:0 0 5px 5px $color-btn-active-border;
+            transition: 0.1s;  
+        }
+        &:focus{
+            transform:scale(1.2);
+            opacity: 0.7;
+            box-shadow:0 0 5px 5px $color-btn-active-border;
+            transition: 0.1s;  
+        }
+    }
+
+    &__btn-txt{
+        display: inline-block;
+        padding: 0 40px 0 12px;
+        color: $color-bg-else;
+        text-align: left;
+        font-family: 'TT Lakes-Bold';
+        font-size: 12px;
+        line-height: 32px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+    }
+}
+
+.swiper-pagination.block-prices-slider__pagination{
+    bottom: 16px;
+}

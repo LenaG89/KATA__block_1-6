@@ -1,0 +1,129 @@
+
+.block-promo{
+    flex-direction: column;
+
+    @media screen and (min-width:767.98px) and (max-width: 1366px){
+        flex-direction: row; 
+    }
+
+    @media (min-width: 1365.98px){
+        flex-direction: row; 
+    }
+
+    &__main{
+        flex-direction: column;
+        padding:0 16px 0 16px;
+        
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            padding:0 48px 0 24px;
+        }
+
+        @media (min-width: 1365.98px){
+            padding:0 36px 0 34px;
+        }
+    }
+
+    &__txt-wrapper{
+        height: 90px;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            height: 160px; 
+        }
+        
+        @media (min-width: 1365.98px){
+            height: 160px;
+        }
+}
+
+    &__txt{
+        margin-bottom: 18px;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-bottom: 18px;
+            line-height: 20px;
+        } 
+
+        @media (min-width: 1365.98px){
+            margin-bottom: 18px;
+            line-height: 20px;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+            
+            @media screen and (min-width:767.98px) and (max-width: 1366px){
+                margin-bottom: 0; 
+            }
+            
+            @media (min-width: 1365.98px){
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__btn-wrapper{
+        display: flex;
+        margin-top: 16px;
+        margin-bottom: 16px;
+       
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-top: 10px;
+            margin-bottom: 32px;  
+        }
+
+        @media (min-width: 1365.98px){
+            margin-top: 13.78px;
+        }
+    }
+
+    &__img-wraper{
+        margin-bottom: 24px;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-right: 24px;
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: 1365.98px){
+            margin-right: 28.65px;
+            margin-bottom: 50px;
+        }
+
+
+    }
+
+    &__img{
+        border: 2px solid $color-bg-else;
+        text-align: center;
+        min-width: 320px;  
+        width: 100%;  
+        display: block; 
+        background-color: $color-bg-main;
+        object-fit: contain;
+
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            min-width: 360px;
+            max-width: 100%;
+            border-radius: 6px;
+            background: $color-bg-main;
+            border: none;
+            object-fit: cover; 
+        }
+
+        @media (min-width: 1365.98px){
+            width: 531.35px;
+            height: 307px;
+            border-radius: 6px;
+            border: none;
+            background: $color-bg-main;
+            object-fit: cover;
+        }
+        
+        
+    }
+
+
+
+    }
+

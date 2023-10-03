@@ -1,0 +1,24 @@
+.services{
+    width: 100%;
+    background-color:$color-bg-main;
+    padding-top: 24px;
+    
+    @media screen and (min-width:767.98px) and (max-width: 1366px){
+        padding-bottom: 0; 
+    }
+
+    @media (min-width: 1365.98px){
+        padding: 42px 0 0 0;  
+    }
+}
+.services__header{
+    margin-bottom: 24px;
+    
+    @media screen and (min-width:767.98px) and (max-width: 1366px){
+        margin-bottom: 32px;
+    }
+
+    @media (min-width: 1365.98px){
+        margin-bottom: 8px;
+    }
+}

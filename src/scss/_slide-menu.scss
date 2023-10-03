@@ -1,0 +1,81 @@
+.menu {
+    display: flex; 
+}
+.slide-menu{
+    flex-wrap: nowrap;
+    margin-bottom: 24px;
+    justify-content: space-between;
+
+    @media screen and (min-width:767.98px) and (max-width: 1366px){
+        margin-bottom: 32px;   
+    }
+    @media (min-width: 1365.98px){
+        margin-bottom: 6px; 
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        list-style: none; 
+        margin-left: 16px;
+        
+        @media screen and (min-width:767.98px) and (max-width: 1366px){
+            margin-left: 24px;   
+        }
+        @media (min-width: 1365.98px){
+            margin-left: 32px;
+            flex-wrap: wrap;
+            overflow-x: hidden;
+        }
+    }
+
+    &__item{
+        display: inline-block;
+        height: 50px;  
+    }
+
+    &__btn{
+        line-height: 40px;
+        font-family: 'TT Lakes-Medium';
+        letter-spacing: -0.2px;
+        text-align: left;
+        color: $color-text-else;
+        padding:0 16px;
+        white-space: nowrap;
+        
+        &:active{
+            border: 2px solid $color-btn-active-border;
+            border-radius: 6px;
+            background-color: $color-bg-else;
+        }
+
+        &:hover{
+            border: 3px solid  $color-btn-active-border;
+            border-radius: 6px;
+            background-color: $color-bg-else;
+            
+        }
+        &:focus{
+            border: 3px solid  $color-btn-active-border;
+            border-radius: 6px;
+            background-color: $color-bg-else;
+            opacity: 0.6;
+        }
+    }
+
+    &__fade{
+        position: absolute;
+        top: 190px;
+        right: 0;
+        width: 24px;
+        height: 40px;
+        background-image: url(../img/fade\ copy.png);
+        background-position: top 0 left 0;
+
+        @media (min-width: 1365.98px){
+            display: none; 
+        }
+    }
+    
+}

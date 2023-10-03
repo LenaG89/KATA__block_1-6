@@ -1,0 +1,21 @@
+.site-wrapper{
+    max-width: 1440px;
+    position: relative;
+    background-color: $color-bg-main;
+    overflow: hidden;
+    @media (min-width: 1365.98px){
+        margin: 0 auto;
+        min-height: 100%;
+        display: flex;
+        border: 1px solid #f0ebeb;
+    }  
+}
+.container{
+    width:100%;  
+}
+.visually-hidden{
+    display: none;
+}
+.title{
+    font-family: 'TT Lakes-Bold';
+}

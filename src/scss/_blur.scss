@@ -1,0 +1,20 @@
+.blur {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 309;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    @media (min-width: 1365.98px){
+        z-index: 312;
+    }
+
+    &--active{
+        top: 0;
+        opacity: 0.9; 
+    }
+}

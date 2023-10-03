@@ -1,0 +1,33 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    line-height: 24px;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'TT Lakes-Regular', Arial, sans-serif;   
+}
+.btn--reset{
+  display:inline-block;
+  background-color: transparent;
+  
+}
+.link--reset{
+  text-decoration: none;
+  display: inline-block; 
+}
